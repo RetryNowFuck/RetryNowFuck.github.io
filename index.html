@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로마자 - 바이에버 문자 변환기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>바이에버 문자 변환기</h1>
+        <p class="subtitle">로마자(영어)를 입력하면 바이올렛 에버가든의 바이에버 문자로 변환됩니다.</p>
+        
+        <div class="input-area">
+            <label for="inputText">로마자 입력 (English Only):</label>
+            <textarea id="inputText" placeholder="로마자를 입력해주세요."></textarea>
+        </div>
+
+        <div class="output-area">
+            <label>바이에버 문자 출력 (Byever Script):</label>
+            <div id="outputText" class="byever-font"></div>
+        </div>
+
+        <div class="btn-group">
+            <button id="copyBtn">결과 복사하기</button>
+            <button id="clearBtn">초기화</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
