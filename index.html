@@ -11,13 +11,19 @@
         <h1>바이에버 문자 변환기</h1>
         <p class="subtitle">로마자를 입력하면 바이에버 문자로 변환되어 보여집니다.</p>
         
+        <!-- 선택기 탭: 변환할 문자를 고르는 UI -->
+        <div class="selector" id="scriptSelector">
+            <div class="option selected" data-script="byever" id="optByever">바이에버 문자</div>
+            <div class="option" data-script="plain" id="optPlain">원문</div>
+        </div>
+
         <div class="input-area">
             <label for="inputText">로마자 입력 (English Only):</label>
             <textarea id="inputText" placeholder="로마자를 입력해주세요."></textarea>
         </div>
 
         <div class="output-area">
-            <label>바이에버 문자 출력 (Byever Script):</label>
+            <label id="outputLabel">바이에버 문자 출력 (Byever Script):</label>
             <div id="outputText" class="byever-font"></div>
         </div>
 
