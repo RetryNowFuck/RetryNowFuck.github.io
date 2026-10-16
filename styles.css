@@ -69,6 +69,32 @@ textarea:focus {
     border-color: #3498db;
 }
 
+/* 선택기 탭 스타일 */
+.selector {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+    justify-content: center;
+}
+.selector .option {
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    transition: background 0.15s, color 0.15s, transform 0.08s;
+}
+.selector .option:hover {
+    transform: translateY(-1px);
+}
+.selector .option.selected {
+    background: linear-gradient(90deg,#6dd3ff,#7b9cff);
+    color: white;
+    box-shadow: 0 6px 18px rgba(43,126,255,0.18);
+}
+
 /* 3. 변환결과창 (바이에버 폰트 적용 구역) */
 #outputText {
     width: 100%;
